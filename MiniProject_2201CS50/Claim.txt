@@ -1,0 +1,254 @@
+/*****************************************************************************
+TITLE: Claims																																
+AUTHOR:  NAGESH RAJENDRABHAI DESAI 
+ROLL NO :- 2201CS50
+Declaration of Authorship
+This txt file, claims.txt, is part of the miniproject of CS209/CS210 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+
+Files:
+==========
+*All the files  submitted, assembler.cpp and emulator.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the 4  test examples has also been uploaded.  instruction check contain 6 asm files (17 output files) , rectangle(3 output files and  3 image evidence )and sumN( 3 output files and 2 image evidence). All the test files have been tested and work properly. As for the evidence for the emulator is uploaded
+with this file and contain images and .trace file as evidence.
+
+*Both of my cpp programs did not show any errors and warnings when I compiled it with
+gcc -std=c89 -pedantic and gcc -std=c89 -pedantic -W -Wall -Wpointer-arith -Wwrite-strings -Wstrict-prototypes standard  or equilvalent ....or gcc ... or g++
+
+*Two programs are compilable with gcc asm.cpp -o asm and gcc emu.cpp -o emu.
+*The system testing is done on g++.exe (MinGW.org GCC-6.3.0-1) 6.3.0
+Copyright (C) 2016 Free Software Foundation, Inc.
+*and using previous version may lead to error 
+*libaries used :- <bits/stdc++.h> 
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+
+    * with two data structures to store respectively labels and mnemonic table with expected operands.
+    * uses a single routine for both passes.
+    * detects label erros.
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+		* advanced listing file.
+		* assembles test programs.
+	  * can implements and demonstrates the instruction SET.
+
+2. The emulator :
+
+		* with three data structures to store respectively memory, mnemonic table with expected operands
+		  and a linked list structure word.
+    * loads object file, 
+    * by giving the instructions like "-befor/-after" , the program can produce memory dump before/after execution.
+    * by giving the instruction like "-trace", the program prints the result of program executed.
+    * detects errant programs.
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested  4 examples shown as below. The errors only occurred in the file test2.asm and 
+the program immediately stopped on the second pass. 
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example. 
+
+After comparing the listing files and object file of all the file mentioned 
+with the implemented result given on the assignment, both of them show no difference 
+from those provided( if there is different  that is fine too) 
+ 
+
+1)
+#Input: asm test1.asm
+#Output: 
+a. test1.l 
+b. test1.log (without any error messages) 		
+c. test1.o
+
+Warnings -- 
+Warning at Line 1 : Warning ! given label is declared but never used :- label
+Warning at Line 11 : Warning ! no Halt instruction found
+
+2)
+#Input:asm test2.asm
+#Output: 
+ 
+a. test2.log (without error messages shown as below but also in log file)
+
+Failed To Assemble
+ERRORS :- 
+Error at Line 2 : Duplicate Label
+Error at Line 3 : Error: Operand is not a number or label is not present
+Error at Line 4 : Error: Operand is not a number or label is not present
+Error at Line 5 : Error: Operand is not a number or label is not present
+Error at Line 6 : Error: Unexpected amount of operand
+Error at Line 7 : Error: Operand is not a number or label is not present
+Error at Line 7 : Error: Unexpected amount of operand
+Error at Line 8 : Error: Invalid Label
+Error at Line 9 : Error: Instruction Not Found
+Error at Line 10 : Error: Instruction Not Found
+
+
+
+3)
+#Input:asm test3.asm
+#Output: 
+a. test3.l 
+b. test3.log (without any error messages)
+c. test3.o
+
+Warnings -- 
+Warning at Line 6 : Warning ! no Halt instruction found
+
+
+4)
+#Input:asm test4.asm
+#Output: 
+a. test4.l 
+b.  (without any error messages)
+c. test4.o
+
+
+5)
+#Input:asm rectangle.asm
+#Output: 
+a. rectangle.l 
+b.  (without any error messages)
+c. rectangle.o
+
+
+6)
+#Input:sumN.asm
+#Output: 
+a. sumN.l 
+b.  (without any error messages)
+c. sumN.o
+-----------------from here this files are present in instruction check folder ----
+7)
+#input:error_test.asm
+#Output
+a. ---failed to assemble--- 
+b.  error_test.txt
+c. ----failed to assemble--
+Failed To Assemble
+ERRORS :- 
+Error at Line 1 : Error: Operand is not a number or label is not present
+Error at Line 2 : Error: Instruction Not Found
+Error at Line 4 : Duplicate Label
+Error at Line 5 : Error: Invalid Label
+Error at Line 6 : Error: Instruction Not Found
+Error at Line 7 : Error: Instruction Not Found
+Error at Line 8 : Error: Instruction Not Found
+Error at Line 9 : Error: Operand is not a number or label is not present
+Error at Line 10 : Error: Unexpected amount of operand
+Error at Line 11 : Error: Instruction Not Found
+
+8)Input:test1.asm
+#Output: 
+a. test1.l 
+b.  (without any error messages)
+c. test1.o
+
+9)Input:test2.asm
+#Output: 
+a. test2.l 
+b.  (without any error messages)
+c. test2.o
+
+10)Input:test3.asm
+#Output: 
+a. test3.l 
+b.  (without any error messages)
+c. test3.o
+11)Input :set_test.asm
+#output :
+a. set_test.l
+b.set_test.o
+12) Input :infinite.asm
+#output :
+a. set_test.l
+b.set_test.o
+c. warning :- halt missing !
+
+
+
+
+
+2. The emulator:
+
+I have tested 12 examples shown as below. The errors only occurred in the file test1.o and 
+the program immediately stopped with an error message on the screen. 
+There was no object file for test2.asm as it contained errors!
+
+The others were tested without any errors detected and produced excution data both on the screen and 
+output text file for each example according to the usage instruction. 
+
+After running the bin file given, the trace data are the same as 
+the implemented result from my own program.
+
+1)
+#Input:emu -trace test1.o
+#Output: test1.trace
+ERROR- INFINITE LOOP DETECTED
+
+
+2)
+#Input: emu -trace test4.o
+#Output: test4.trace
+
+-- Total 47654 lines of Instructions Completed
+
+
+3)
+#Input: emu -trace test3.asm
+#Output: test3.trace 
+
+PC=00000000 	 SP=0000270f 	 A=00000000 	 B=00000000 set 75
+
+PC=00000001 	 SP=0000270f 	 A=0000004b 	 B=00000000 ldc 75
+
+PC=00000002 	 SP=0000270f 	 A=0000008d 	 B=00000000 adc 66
+
+PC=00000003 	 SP=0000270f 	 A=0000008d 	 B=00000000 set 66
+
+
+
+
+4)
+#Input: emu -trace sumN.o
+#Output: sumN.trace
+
+5)
+#Input: emu -trace rectangle.o
+#Output: rectangle.trace
+
+-- 15 number of Instruction executed !
+6) 
+# Input : emu.exe -trace infinite.o
+#output : infinite loop detected .
+
+All Files and Photo Proofs are sorted in Their Respected Folders
+
+Sample Tests - test1,test2,test3,test4
+MyAlgo - rectangle ,sumN , instruction_check
+
+-----------------------------BubbleSort Check ------------------------------------------
+
+Bubble sort program is made and successfully assembled and emulated with 3 output file and 3 image evidence 
+
+the BubbleSort folder contain:-
+Bubblesort.asm 
+BubbleSort.l
+BubbleSort.o
+BubbleSort.trace
+and 3 image evidence 
+
+
+
+

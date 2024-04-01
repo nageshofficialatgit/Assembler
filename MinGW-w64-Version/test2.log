@@ -1,0 +1,8 @@
+ERROR: Duplicate Label at line 2
+WARNING: Incorrect label format at line 8
+ERROR: Unknown Symbol as operand at line 3
+ERROR: Unknown Symbol as operand at line 4
+ERROR: Operand not expected at line 6
+ERROR: Unknown Symbol as operand at line 7
+ERROR: Mnemonic not defined at line 9
+ERROR: Mnemonic not defined at line 10

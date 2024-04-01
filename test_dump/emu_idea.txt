@@ -1,0 +1,5 @@
+step 1 , seprate instruction and operand ; 
+step 2 :- push them to instruction register ; 
+step 3 :- intiate A, B , SP , PC 
+step 4 :- clean memory before starting program 
+step 5 :- start the reading instruction , now given loop will follow , ::: identify instruction call respectively function input the function than it is done 

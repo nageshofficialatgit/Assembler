@@ -1,0 +1,34 @@
+1). macro eco 
+2). job markets - college 
+3). blue print 
+
+
+1).==> 
+2020 -- 2022 -> great time for job , covid bloom 
+2022 -- 2024 -> recession hitted , on campus declined 
+
+why got fucked here -> 
+
+
+2). job market - college 
+-> channel -> on campus 
+ `	   -> network on linknl 
+         -> off campus 
+-> senoir != junior 
+-> NO JOB SECURITY 
+-> GET TOP 1% IN SKILLS 
+
+3). BLUE PRINT -> 
+-> project :- what makes it good 
+ 	... helps you stand out from 
+crowd , 
+.... project level :- 
+L1). build x using y 
+L2). deployment(AWS , GCP AND AZURE ) and production setting.
+  
+L3). LIVE USERS , make your project live 
+ and usable for people
+L4). Scalability :- 
+
+DP-pattern:-
+practise and then mixed bag practise 

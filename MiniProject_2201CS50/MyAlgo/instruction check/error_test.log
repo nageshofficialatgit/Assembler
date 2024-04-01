@@ -1,0 +1,12 @@
+Failed To Assemble
+ERRORS :- 
+Error at Line 1 : Error: Operand is not a number or label is not present
+Error at Line 2 : Error: Instruction Not Found
+Error at Line 4 : Duplicate Label
+Error at Line 5 : Error: Invalid Label
+Error at Line 6 : Error: Instruction Not Found
+Error at Line 7 : Error: Instruction Not Found
+Error at Line 8 : Error: Instruction Not Found
+Error at Line 9 : Error: Operand is not a number or label is not present
+Error at Line 10 : Error: Unexpected amount of operand
+Error at Line 11 : Error: Instruction Not Found

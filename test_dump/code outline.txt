@@ -1,0 +1,22 @@
+take input asm 
+clean asm from comment and white space 
+identify label , instruction , operand 
+
+pass_1 :- error and  warn search 
+:- error related to label , might need whole different data structers for this 
+:- error related to instruction and operand 
+:- warning infinite loop , halt , 
+:- storing warning in the output file might also print in console 
+pass_2 :- now time to make listing file and machine code file if needed 
+
+//
+error considering 
+1 :- error's that depend on that code line doesn't need any look up 
+	A:- operand nature differecne this means operand cant have space or anything like that  , no matching instruction ,  
+0 - fine 
+1 - incorrect instruction name 
+2 - more than expected operand 
+3 - if code type 1 and operand doent have only numeric 
+4 - if 
+        
+           
